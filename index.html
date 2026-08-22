@@ -1,0 +1,1086 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Md Asmu Rahmani - Meet The Builders journey and Padhai Dost AI study assistant">
+
+    <title>
+        From a Student Problem to an AI Solution | Md Asmu Rahmani
+    </title>
+
+    <style>
+
+        /* =========================
+           BASIC RESET
+        ========================= */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family:
+                Arial,
+                Helvetica,
+                sans-serif;
+
+            background: #f6f8fc;
+            color: #172033;
+            line-height: 1.7;
+        }
+
+
+        /* =========================
+           HERO SECTION
+        ========================= */
+
+        .hero {
+
+            min-height: 500px;
+
+            display: flex;
+            align-items: center;
+
+            padding: 80px 20px;
+
+            color: white;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #111827 0%,
+                    #312e81 55%,
+                    #6d28d9 100%
+                );
+        }
+
+        .hero-container {
+
+            width: 100%;
+            max-width: 900px;
+
+            margin: auto;
+        }
+
+        .badge {
+
+            display: inline-block;
+
+            padding: 8px 16px;
+
+            border-radius: 50px;
+
+            border: 1px solid
+                    rgba(255,255,255,0.3);
+
+            background:
+                rgba(255,255,255,0.1);
+
+            font-size: 14px;
+            font-weight: bold;
+
+            letter-spacing: 1px;
+        }
+
+        .hero h1 {
+
+            font-size: 64px;
+
+            line-height: 1.1;
+
+            margin-top: 25px;
+            margin-bottom: 20px;
+
+            letter-spacing: -2px;
+        }
+
+        .hero-description {
+
+            max-width: 750px;
+
+            font-size: 19px;
+
+            color: #e5e7ff;
+        }
+
+        .author {
+
+            margin-top: 30px;
+
+            font-size: 16px;
+
+            color: #d8dcff;
+        }
+
+
+        /* =========================
+           MAIN ARTICLE
+        ========================= */
+
+        main {
+
+            max-width: 900px;
+
+            margin: -60px auto 60px;
+
+            padding: 0 20px;
+
+            position: relative;
+        }
+
+        article {
+
+            background: white;
+
+            padding: 60px;
+
+            border-radius: 25px;
+
+            border: 1px solid #e5e7eb;
+
+            box-shadow:
+                0 20px 60px
+                rgba(0,0,0,0.10);
+        }
+
+        .intro {
+
+            font-size: 19px;
+
+            color: #4b5563;
+
+            margin-bottom: 30px;
+        }
+
+
+        /* =========================
+           HEADINGS
+        ========================= */
+
+        h2 {
+
+            font-size: 30px;
+
+            line-height: 1.3;
+
+            margin-top: 45px;
+
+            margin-bottom: 15px;
+
+            color: #111827;
+        }
+
+        p {
+
+            margin-bottom: 18px;
+
+            font-size: 17px;
+        }
+
+
+        /* =========================
+           BLOCKQUOTE
+        ========================= */
+
+        blockquote {
+
+            margin: 30px 0;
+
+            padding: 22px 25px;
+
+            border-left:
+                5px solid #4f46e5;
+
+            background: #eef2ff;
+
+            border-radius:
+                0 15px 15px 0;
+
+            font-size: 19px;
+
+            font-weight: bold;
+
+            color: #312e81;
+        }
+
+
+        /* =========================
+           FEATURES
+        ========================= */
+
+        .feature-grid {
+
+            display: grid;
+
+            grid-template-columns:
+                repeat(
+                    auto-fit,
+                    minmax(180px, 1fr)
+                );
+
+            gap: 15px;
+
+            margin: 25px 0;
+        }
+
+        .feature {
+
+            padding: 20px;
+
+            background: #fafbff;
+
+            border: 1px solid #e5e7eb;
+
+            border-radius: 15px;
+
+            font-weight: bold;
+
+            transition: 0.3s;
+        }
+
+        .feature:hover {
+
+            transform: translateY(-5px);
+
+            box-shadow:
+                0 10px 25px
+                rgba(0,0,0,0.08);
+        }
+
+
+        /* =========================
+           LIST
+        ========================= */
+
+        ul {
+
+            padding-left: 25px;
+
+            margin-bottom: 20px;
+        }
+
+        li {
+
+            margin: 10px 0;
+
+            font-size: 17px;
+        }
+
+
+        /* =========================
+           BIG QUOTE
+        ========================= */
+
+        .big-quote {
+
+            margin: 35px 0;
+
+            padding: 30px;
+
+            text-align: center;
+
+            border-radius: 20px;
+
+            background:
+                linear-gradient(
+                    135deg,
+                    #eef2ff,
+                    #faf5ff
+                );
+
+            border: 1px solid #ddd6fe;
+
+            font-size: 22px;
+
+            font-weight: bold;
+
+            color: #312e81;
+        }
+
+
+        /* =========================
+           TAGS
+        ========================= */
+
+        .tags {
+
+            display: flex;
+
+            flex-wrap: wrap;
+
+            gap: 10px;
+
+            margin-top: 40px;
+        }
+
+        .tag {
+
+            padding: 8px 13px;
+
+            border-radius: 50px;
+
+            background: #eef2ff;
+
+            color: #4338ca;
+
+            font-size: 14px;
+
+            font-weight: bold;
+        }
+
+
+        /* =========================
+           FOOTER
+        ========================= */
+
+        footer {
+
+            text-align: center;
+
+            padding: 40px 20px;
+
+            color: #6b7280;
+
+            font-size: 14px;
+        }
+
+
+        /* =========================
+           BACK TO TOP
+        ========================= */
+
+        .top-button {
+
+            position: fixed;
+
+            right: 20px;
+            bottom: 20px;
+
+            padding: 12px 17px;
+
+            background: #111827;
+
+            color: white;
+
+            text-decoration: none;
+
+            border-radius: 50px;
+
+            font-weight: bold;
+
+            box-shadow:
+                0 8px 25px
+                rgba(0,0,0,0.2);
+
+            transition: 0.3s;
+        }
+
+        .top-button:hover {
+
+            background: #4f46e5;
+
+            transform:
+                translateY(-3px);
+        }
+
+
+        /* =========================
+           MOBILE RESPONSIVE
+        ========================= */
+
+        @media (max-width: 700px) {
+
+            .hero {
+
+                padding: 55px 20px;
+
+                min-height: 450px;
+            }
+
+            .hero h1 {
+
+                font-size: 42px;
+
+                letter-spacing: -1px;
+            }
+
+            .hero-description {
+
+                font-size: 17px;
+            }
+
+            main {
+
+                margin-top: -35px;
+
+                padding: 0 12px;
+            }
+
+            article {
+
+                padding: 30px 22px;
+
+                border-radius: 20px;
+            }
+
+            h2 {
+
+                font-size: 26px;
+            }
+
+            p,
+            li {
+
+                font-size: 16px;
+            }
+
+            .feature-grid {
+
+                grid-template-columns: 1fr;
+            }
+
+            .big-quote {
+
+                font-size: 19px;
+
+                padding: 25px 18px;
+            }
+        }
+
+    </style>
+</head>
+
+
+<body id="top">
+
+
+    <!-- =================================
+         HERO
+    ================================== -->
+
+    <header class="hero">
+
+        <div class="hero-container">
+
+            <span class="badge">
+                GEN AI ACADEMY APAC
+                • MEET THE BUILDERS
+            </span>
+
+            <h1>
+                From a Student Problem
+                to an AI Solution
+            </h1>
+
+            <p class="hero-description">
+
+                My journey exploring Generative AI
+                and the idea behind
+                <strong>Padhai Dost</strong> —
+                an AI-powered study companion
+                for students.
+
+            </p>
+
+            <div class="author">
+
+                <strong>
+                    Md Asmu Rahmani
+                </strong>
+
+                · Darbhanga, Bihar, India
+
+            </div>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =================================
+         MAIN CONTENT
+    ================================== -->
+
+    <main>
+
+        <article>
+
+
+            <!-- INTRODUCTION -->
+
+            <p class="intro">
+
+                I have always been interested in
+                technology, programming, and
+                Artificial Intelligence.
+
+                As a Computer Science student,
+                I spend a lot of time learning
+                new concepts, solving programming
+                problems, and exploring how
+                technology can make everyday
+                tasks easier.
+
+            </p>
+
+
+
+            <!-- JOURNEY -->
+
+            <h2>
+                My Journey as a Builder
+            </h2>
+
+            <p>
+
+                The Gen AI Academy APAC –
+                Meet The Builders initiative
+                gave me an opportunity to think
+                beyond simply learning about AI.
+
+                It encouraged me to think like
+                a builder.
+
+            </p>
+
+            <p>
+
+                Instead of asking only,
+
+                <strong>
+                    “What can AI do?”
+                </strong>
+
+                I started asking:
+
+            </p>
+
+            <blockquote>
+
+                “What real problem can I solve
+                with AI?”
+
+            </blockquote>
+
+            <p>
+
+                That question became the starting
+                point of my project idea.
+
+            </p>
+
+
+
+            <!-- PROBLEM -->
+
+            <h2>
+                The Problem
+            </h2>
+
+            <p>
+
+                Students have access to an
+                enormous amount of educational
+                content today.
+
+                However, having information is
+                not the same as understanding it.
+
+            </p>
+
+            <p>
+
+                A student may have difficulty
+                understanding a programming
+                concept, preparing revision notes,
+                finding practice questions, or
+                deciding what to study next.
+
+            </p>
+
+            <p>
+
+                Searching through multiple
+                websites and resources can also
+                become time-consuming.
+
+            </p>
+
+            <p>
+
+                I experienced this challenge
+                myself while studying technical
+                subjects.
+
+                This made me think about creating
+                an AI-based study companion that
+                could provide simple,
+                conversational and personalized
+                academic assistance.
+
+            </p>
+
+
+
+            <!-- IDEA -->
+
+            <h2>
+                My Idea: Padhai Dost
+            </h2>
+
+            <p>
+
+                My project idea is
+                <strong>Padhai Dost</strong>,
+                an AI-powered study assistant
+                for students.
+
+            </p>
+
+            <p>
+
+                The idea is simple:
+
+                A student asks a question in
+                normal language, and the AI helps
+                explain the concept in a clear
+                and structured way.
+
+            </p>
+
+
+
+            <!-- FEATURES -->
+
+            <div class="feature-grid">
+
+                <div class="feature">
+                    Simple concept explanations
+                </div>
+
+                <div class="feature">
+                    Programming & technical help
+                </div>
+
+                <div class="feature">
+                    Revision notes
+                </div>
+
+                <div class="feature">
+                    Practice questions
+                </div>
+
+                <div class="feature">
+                    Topic-wise learning
+                </div>
+
+                <div class="feature">
+                    Conversational doubt solving
+                </div>
+
+                <div class="feature">
+                    Hinglish-friendly explanations
+                </div>
+
+                <div class="feature">
+                    Personalized study suggestions
+                </div>
+
+            </div>
+
+
+            <p>
+
+                The goal is not to replace
+                teachers, books, or educational
+                institutions.
+
+                Instead, Padhai Dost is intended
+                to act as an additional learning
+                companion that students can use
+                whenever they need help
+                understanding a topic.
+
+            </p>
+
+
+
+            <!-- WHY AI -->
+
+            <h2>
+                Why Generative AI?
+            </h2>
+
+            <p>
+
+                Traditional software generally
+                follows predefined instructions.
+
+                Generative AI makes it possible
+                to interact with technology more
+                naturally.
+
+            </p>
+
+            <blockquote>
+
+                “Mujhe Priority Scheduling simple
+                example ke saath samjhao.”
+
+            </blockquote>
+
+            <p>
+
+                A student can communicate
+                naturally instead of having to
+                search for the exact wording
+                of a question.
+
+                This conversational experience
+                is one of the reasons I find
+                Generative AI particularly
+                interesting.
+
+            </p>
+
+
+
+            <!-- BUILDING -->
+
+            <h2>
+                My Building Approach
+            </h2>
+
+            <p>
+
+                I am approaching the project
+                in small steps.
+
+                First, I am focusing on the
+                core student experience:
+
+                asking a question and receiving
+                a useful answer.
+
+            </p>
+
+            <p>
+
+                Then I plan to improve the system
+                with better prompting, structured
+                responses, practice questions,
+                and learning-focused features.
+
+            </p>
+
+            <p>
+
+                I also want to explore how cloud
+                and Generative AI tools can be
+                used to turn the idea into a
+                practical application.
+
+            </p>
+
+            <p>
+
+                The important lesson for me is
+                that building an AI application
+                is not simply about connecting
+                an AI model to a user interface.
+
+            </p>
+
+
+            <ul>
+
+                <li>
+                    A clearly defined problem
+                </li>
+
+                <li>
+                    Good user experience
+                </li>
+
+                <li>
+                    Careful prompt design
+                </li>
+
+                <li>
+                    Testing
+                </li>
+
+                <li>
+                    Reliable outputs
+                </li>
+
+                <li>
+                    Responsible use of AI
+                </li>
+
+                <li>
+                    Continuous improvement
+                </li>
+
+            </ul>
+
+
+
+            <!-- LEARNING -->
+
+            <h2>
+                What I Am Learning
+            </h2>
+
+            <p>
+
+                This journey is teaching me that
+                you do not need to know everything
+                before you start building.
+
+            </p>
+
+            <p>
+
+                As a student, I am still learning
+                programming, AI, cloud technologies,
+                and software development.
+
+            </p>
+
+            <p>
+
+                But building something forces me
+                to learn these concepts practically.
+
+                Whenever I face a technical problem,
+                I have to research it, understand it,
+                experiment with it, and try again.
+
+            </p>
+
+            <p>
+
+                That process is helping me move
+                from being only a learner to
+                becoming a builder.
+
+            </p>
+
+
+
+            <!-- FUTURE -->
+
+            <h2>
+                Future Vision
+            </h2>
+
+            <p>
+
+                I want to continue improving
+                Padhai Dost with features such as:
+
+            </p>
+
+            <ul>
+
+                <li>
+                    PDF-based learning
+                </li>
+
+                <li>
+                    Chapter-wise revision
+                </li>
+
+                <li>
+                    Personalized study plans
+                </li>
+
+                <li>
+                    Automatic quizzes
+                </li>
+
+                <li>
+                    Progress tracking
+                </li>
+
+                <li>
+                    Voice interaction
+                </li>
+
+                <li>
+                    Multilingual learning
+                </li>
+
+                <li>
+                    Better source-based answers
+                </li>
+
+                <li>
+                    Personalized recommendations
+                </li>
+
+            </ul>
+
+
+
+            <!-- TAKEAWAY -->
+
+            <h2>
+                My Biggest Takeaway
+            </h2>
+
+            <p>
+
+                The biggest lesson I have learned
+                from this experience is simple:
+
+            </p>
+
+            <div class="big-quote">
+
+                Start with a problem,
+                not with technology.
+
+            </div>
+
+            <p>
+
+                Generative AI is powerful, but
+                the technology itself is not
+                the final goal.
+
+                The real value comes from using
+                that technology to solve a problem
+                that people actually experience.
+
+            </p>
+
+            <p>
+
+                As a student from Darbhanga,
+                Bihar, I want to continue
+                exploring how AI can be used
+                to solve practical problems
+                around me.
+
+            </p>
+
+
+
+            <!-- CONCLUSION -->
+
+            <h2>
+                Conclusion
+            </h2>
+
+            <p>
+
+                The Meet The Builders journey
+                is not just about creating one
+                project.
+
+                It is about developing the
+                mindset to observe problems,
+                build solutions, learn from
+                failures, and keep improving.
+
+            </p>
+
+            <p>
+
+                <strong>
+                    And this is only the beginning
+                    of my journey as a builder.
+                </strong>
+
+            </p>
+
+
+
+            <!-- TAGS -->
+
+            <div class="tags">
+
+                <span class="tag">
+                    #MeetTheBuilders
+                </span>
+
+                <span class="tag">
+                    #GenAIAcademyAPAC
+                </span>
+
+                <span class="tag">
+                    #GenerativeAI
+                </span>
+
+                <span class="tag">
+                    #ArtificialIntelligence
+                </span>
+
+                <span class="tag">
+                    #AIForEducation
+                </span>
+
+                <span class="tag">
+                    #StudentBuilder
+                </span>
+
+                <span class="tag">
+                    #BuildInPublic
+                </span>
+
+            </div>
+
+
+        </article>
+
+    </main>
+
+
+
+    <!-- =================================
+         FOOTER
+    ================================== -->
+
+    <footer>
+
+        © 2026 Md Asmu Rahmani
+
+        <br>
+
+        Meet The Builders
+        · Gen AI Academy APAC
+
+    </footer>
+
+
+
+    <!-- =================================
+         BACK TO TOP
+    ================================== -->
+
+    <a href="#top"
+       class="top-button">
+
+        ↑ Top
+
+    </a>
+
+
+</body>
+
+</html>
